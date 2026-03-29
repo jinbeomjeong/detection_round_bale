@@ -53,7 +53,7 @@ def clean_empty_labels(images_dir, labels_dir):
 
 if __name__ == "__main__":
     # Define absolute paths based on the provided workspace
-    base_path = "bale_2\\train"
+    base_path = 'bale_1' + os.sep + 'test'
     images_folder = os.path.join(base_path, "images")
     labels_folder = os.path.join(base_path, "labels")
 

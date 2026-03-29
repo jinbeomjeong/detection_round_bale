@@ -122,3 +122,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#dataset
+dataset
+bale_1
+bale_2
+
+# pycharm env
+.idea

@@ -60,7 +60,7 @@ def convert_seg_to_bbox(input_dir, output_dir):
     print(f"변환 완료: {len(label_files)}개의 파일이 '{output_dir}' 폴더에 저장되었습니다.")
 
 if __name__ == "__main__":
-    INPUT_LABELS = "bale_2\\valid\\labels"
-    OUTPUT_LABELS = "bale_2\\valid\\labels_bbox"
+    INPUT_LABELS = 'bale_2' + os.sep + 'test' + os.sep + 'labels'
+    OUTPUT_LABELS = 'bale_2' + os.sep + 'test' + os.sep + 'labels_bbox'
     
     convert_seg_to_bbox(INPUT_LABELS, OUTPUT_LABELS)

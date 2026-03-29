@@ -41,10 +41,7 @@ def change_class_id(input_dir, output_dir, new_id):
     print(f"변경 완료: {count}개의 파일에서 클래스 번호를 '{new_id}'로 변경하여 '{output_dir}'에 저장했습니다.")
 
 if __name__ == "__main__":
-    # 설정값
-    INPUT_LABELS = "bale_1\\train\\labels"      # 원본 라벨 폴더
-    OUTPUT_LABELS = "bale_1\\train\\labels_changed" # 변경된 라벨 저장 폴더
-    NEW_CLASS_ID = 1             # 변경할 새로운 클래스 번호 (예: 1)
-    
-    # 실행
-    change_class_id(INPUT_LABELS, OUTPUT_LABELS, NEW_CLASS_ID)
+    INPUT_LABELS = 'bale_1' + os.sep + 'test' + os.sep + 'labels'      # 원본 라벨 폴더
+    OUTPUT_LABELS = 'bale_1' + os.sep + 'test' + os.sep + 'labels_changed' # 변경된 라벨 저장 폴더
+
+    change_class_id(input_dir=INPUT_LABELS, output_dir=OUTPUT_LABELS, new_id=1)

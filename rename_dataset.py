@@ -42,5 +42,5 @@ def rename_yolo_dataset(base_path, header_name='file'):
     print(f"\nFinished! Processed {count-1} pairs.")
 
 if __name__ == "__main__":
-    dataset_root = "bale_2\\valid"
-    rename_yolo_dataset(dataset_root, header_name='bale_cls_2')
+    dataset_root = 'dataset' + os.sep + 'train'
+    rename_yolo_dataset(dataset_root, header_name='person')

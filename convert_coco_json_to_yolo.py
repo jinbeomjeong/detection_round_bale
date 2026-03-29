@@ -59,7 +59,7 @@ def convert_coco_to_yolo(json_path:str, output_dir:str):
     print("Conversion complete.")
 
 if __name__ == '__main__':
-    json_path = 'dataset\\instances_val2017.json'
-    output_dir = "dataset\\val\\labels"
+    json_path = 'dataset' + os.sep + 'instances_train2017.json'
+    output_dir = 'dataset' + os.sep + 'train' + os.sep + 'labels'
 
     convert_coco_to_yolo(json_path=json_path, output_dir=output_dir)
